@@ -1,0 +1,11 @@
+soTienBanDau, laiSuat, soTienMuonCo = map(float,input().split())
+
+def tinh_lai_suat_bank(soTienBanDau, laiSuat, soTienMuonCo):
+    soThangCanGui = 0
+    while soTienBanDau < soTienMuonCo:
+        tienLaiHangThang = (soTienBanDau*laiSuat)/100
+        soTienBanDau += tienLaiHangThang
+        soThangCanGui += 1
+    return soThangCanGui
+
+print(tinh_lai_suat_bank(soTienBanDau, laiSuat, soTienMuonCo))
