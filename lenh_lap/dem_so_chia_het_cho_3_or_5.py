@@ -7,3 +7,4 @@ for i in a:
         so_chia_het_cho_3_or_5 += 1
 
 print(so_chia_het_cho_3_or_5)
+

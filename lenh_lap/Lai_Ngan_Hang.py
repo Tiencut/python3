@@ -10,3 +10,4 @@ def tinh_lai_suat_bank(soTienBanDau, laiSuat, soTienMuonCo):
     return soThangCanGui
 
 print(tinh_lai_suat_bank(soTienBanDau, laiSuat, soTienMuonCo))
+

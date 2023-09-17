@@ -1,10 +1,14 @@
-n = int(input())
+def convert_to_time(seconds):
+    hours = seconds // 3600
+    minutes = (seconds - hours*3600) // 60
+    seconds = seconds % 60
 
-# 
-gio = n // 3600
-n = n - gio*3600
-phut = n // 60
-n = n- phut*60
-giay = n 
+    return hours,minutes,seconds
 
-print("{:02d}:{:02d}:{:02d}".format(gio,phut,giay))
+def print_time(hours, minutes, seconds):
+    print("{:02d}:{:02d}:{:02d}".format(hours,minutes,seconds))
+
+if __name__ == "__main__":
+    seconds = int(input())
+    hours, minutes, seconds = convert_to_time(seconds)
+    print_time(hours,minutes,seconds)

@@ -1,0 +1,7 @@
+s = input()
+ket_qua = ""
+for i in s:
+    if not i.isdigit():
+        ket_qua += i
+
+print(ket_qua)
